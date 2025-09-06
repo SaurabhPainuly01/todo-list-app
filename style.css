@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(to bottom right, #0a1f44, #2d033b);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+h2 {
+    color: rgb(179, 131, 226);
+    font-size: 2rem;
+}
+
+#container {
+    padding: 20px;
+    background-color: white;
+    width: 40%;
+    height: 40%;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+.addTaskDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    border-radius: 25px;
+    background-color: hsl(0, 0%, 90%);
+}
+
+#taskInp {
+    width: 65%;
+    max-height: fit-content;
+    padding: 16px;
+    border: none;
+    border-radius: 25px;
+    background-color: hsl(0, 0%, 90%);
+    font-size: 1.3em;
+}
+
+#addTaskBtn {
+    width: 20%;
+    padding: 16px;
+    border-radius: 25px;
+    color: #ffffff;
+    background-color: #ff7e29;
+    font-size: 1.3em;
+    border: none;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 850px){
+    #container {
+        width: 80%;
+        height: 60%;
+    }
+}
+
+@media screen and (max-width: 400px){
+    #addTaskBtn {
+        width: 30%;
+        font-size: 1.1em;
+    }
+}
+
+#addTaskBtn:active {
+    transform: scale(1.1);
+    transition: transform 0.1s linear;
+}
+
+ul {
+    list-style-type: none;
+    font-size: 1.3em;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 12px 0;
+}
+
+input[type="checkbox"] {
+    transform: scale(1.6);
+}
+
+input[type="checkbox"]:checked + span {     
+  text-decoration: line-through;
+  opacity: .5;
+}
+
+.deleteBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 2rem;
+  color: crimson;
+}
+
+.deleteBtn::before {
+  content: '\00D7';    /*Unicode for × */
+}
+
+.deleteBtn:hover {
+    opacity: 0.7;
+}
+
+.deleteBtn:active {
+    transform: scale(1.4);
+}
