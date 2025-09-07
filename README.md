@@ -1,4 +1,5 @@
 # todo-list-app
-A simple and clean to-do list app built with HTML, CSS, and JavaScript. 
-Allows users to add, delete, and mark tasks. 
-Data is saved using localStorage.
+This project implements a basic to-do list application allowing users to add, delete, and mark tasks as complete.  
+Task data is persistently stored using the browser's localStorage.  
+The application is built using HTML for structure, CSS for styling, and JavaScript for interactive functionality.
+
